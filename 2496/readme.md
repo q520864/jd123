@@ -7,7 +7,7 @@
 hostname = api_2496.kuwo.cn
 
 [rewrite_local]
-^http?:\/\/api\_\d{4}\.kuwo\.cn\/front\/user\/vipstatus$ url script-response-body 2046.js
+^http?:\/\/api\_\d{4}\.kuwo\.cn\/front\/user\/vipstatus$ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/2496/2496.js
 
 ```
 
