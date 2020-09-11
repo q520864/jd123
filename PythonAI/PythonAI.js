@@ -6,7 +6,8 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^http?:\/\/ws\.60he\.com\/book* url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/PythonAI/PythonAI.js
+^http?:\/\/ws\.60he\.com\/* url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/PythonAI/PythonAI.js
+
 [mitm]
 hostname = ws.60he.com
 */
@@ -14,19 +15,14 @@ hostname = ws.60he.com
 var body = $response.body;
 var url = $request.url;
 
-const path1 = '\/book*';
-const path2 = '\/user*';
+const path1 = '\/user*';
+const path2 = '\/book*'
 
 let obj = JSON.parse(body);
 
-if (url.indexOf(path1) != -1) {
+if (url.indexOf(path1|path2) != -1) {
 	obj.data["isFree"] = 1;
-	body = JSON.stringify(obj);  
- }
- 
-if (url.indexOf(path2) != -1) {
 	obj.data["vip"] = 365;
 	body = JSON.stringify(obj);  
  }
-
 $done({body});
