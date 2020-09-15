@@ -9,7 +9,7 @@ QQ群：654371081
 
 圈X配置：
 [rewrite_local]
-^http?:\/\/api\.express-api\.com\/v1\/device url script-response-body https://github.com/sngxpro/QuantumultX/blob/master/AirspeedVPN/airspeed.js
+^https:\/\/api\.express\-api\.com\/v1\/device url script-response-body https://github.com/sngxpro/QuantumultX/blob/master/AirspeedVPN/airspeed.js
 [mitm]
 hostname = api.express-api.com
 */
@@ -23,7 +23,7 @@ let obj = JSON.parse(body);
 
 if (url.indexOf(path1) != -1) {
 	obj.data["expire"] = 1800000000000;
-	obj.data["type"] = vip;
+	obj.data["type"] = "vip";
 	body = JSON.stringify(obj);  
  }
  $done({body});
