@@ -9,7 +9,7 @@ QQ群：654371081
 
 圈X配置：
 [rewrite_local]
-^https:\/\/api\.express\-api\.com\/v1\/device url script-response-body https://github.com/sngxpro/QuantumultX/blob/master/AirspeedVPN/airspeed.js
+^https:\/\/api\.express-api\.com\/v1\/device url script-response-body https://github.com/sngxpro/QuantumultX/blob/master/AirspeedVPN/airspeed.js
 [mitm]
 hostname = api.express-api.com
 */
