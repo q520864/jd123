@@ -9,7 +9,7 @@ QQ群：654371081
 
 圈X配置：
 [rewrite_local]
-^https:\/\/irecgo\.softin-tech\.com\/user\/info url script-response-body lw.js
+^https:\/\/irecgo\.softin-tech\.com\/user\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lw/lw.js
 
 [mitm]
 hostname = irecgo.softin-tech.com
