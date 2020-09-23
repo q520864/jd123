@@ -13,19 +13,19 @@
 每天0/6/12/18点逛新品/店铺/会场可获得京豆，京豆先到先得
 往期奖励一般每天都能拿20京豆
 
-注：脚本运行会给我提供的助力码助力，介意者可删掉脚本第45行helpCode里面的东西。留空即可（const helpCode = []）;
+注：这是我直接从原作者lkx哪里拿来的脚本，非原创
 
 支持京东双账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 // quantumultx
 [task_local]
 #京东手机狂欢城
-1 0-18/6 * * * https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js, tag=京东手机狂欢城, enabled=true
+1 0-18/6 * * * https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js, tag=京东手机狂欢城, enabled=true
 // Loon
 [Script]
-cron "1 0-18/6 * * *" script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js,tag=京东手机狂欢城
+cron "1 0-18/6 * * *" script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js,tag=京东手机狂欢城
 // Surge
-京东手机狂欢城 = type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
+京东手机狂欢城 = type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js
  */
 const $ = new Env('京东手机狂欢城');
 
