@@ -20,7 +20,7 @@
 // quantumultx
 [task_local]
 #京东手机狂欢城
-1 0-18/6 * * * https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js, tag=京东手机狂欢城, enabled=true
+1 0-18/6 * * * https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js, tag=京东手机狂欢城, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/jd.png, enabled=true
 // Loon
 [Script]
 cron "1 0-18/6 * * *" script-path=https://raw.githubusercontent.com/sngxpro/QuantumultX/master/jd818.js,tag=京东手机狂欢城
