@@ -4,7 +4,7 @@
 
 ```properties
 [MITM]
-hostname =  a1008610010.yohui.vip
+hostname =  1008610010.yohui.vip
 
 [rewrite_local]
 ^https?:\/\/1008610010\.yohui\.vip\/index\.php\/Api\/LiveApi\/getMovietime url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/aoligei/aoligei.js
