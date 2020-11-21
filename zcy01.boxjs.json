@@ -1,0 +1,37 @@
+{
+	"id": "zcy01.app.sub",
+	"name": "zcy01脚本订阅",
+	"author": "@zcy01",
+	"icon": "https://avatars0.githubusercontent.com/u/15939669?s=460&u=54dc80f324bb7339961513959ddd7d8df1c0d0f8&v=4",
+	"repo": "https://github.com/ZCY01/daily_scripts",
+	"apps": [
+		{
+			"id": "JD_PRICE_PROTECT",
+			"name": "X东价格保护",
+			"keys": [],
+			"settings": [
+				{
+					"id": "jdPriceProtectNotify",
+					"name": "静默运行",
+					"val": false,
+					"type": "boolean",
+					"desc": "运行X东价格保护脚本时不发出系统弹窗通知"
+				},
+				{
+					"id": "jdPriceProtectGoodFilters",
+					"name": "过滤",
+					"val": "",
+					"type": "text",
+					"desc": "商品过滤器，以@间隔分开，剔除包含规则的商品"
+				}
+			],
+			"icons": [
+				"https://raw.githubusercontent.com/ZCY01/img/master/pricev1.png",
+				"https://raw.githubusercontent.com/ZCY01/img/master/pricev1.png"
+			],
+			"author": "@zcy01",
+			"repo": "https://github.com/ZCY01/daily_scripts",
+			"script": "https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_priceProtect.js"
+		}
+	]
+}
