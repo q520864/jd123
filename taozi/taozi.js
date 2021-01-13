@@ -7,7 +7,7 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^http:\\\/\\\/api\\.06f158e\\.xyz\\\/fast-cloud\\\/user\\\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/taozi/taozi.js
+^http:\/\/api\.06f158e\.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/taozi/taozi.js
 
 [mitm]
 hostname = api.06f158e.xyz
