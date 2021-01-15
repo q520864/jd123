@@ -6,7 +6,7 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^https:\/\/myiconisme\.com\/api\/.+ url script-response-body km.js
+^https:\/\/myiconisme\.com\/api\/.+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/km/km.js
 [mitm]
 hostname = myiconisme.com
 */
@@ -21,8 +21,8 @@ let obj = JSON.parse(body);
 if (url.indexOf(path1) != -1) {
 	obj.data["is_vip"] = 1;
 	obj.data["expire_time1"] = "1800000000";
-  obj.data["expire_time"] = "2030-01-01";
-  obj.data["re_today_view_times"] = "999";
+        obj.data["expire_time"] = "2030-01-01";
+        obj.data["re_today_view_times"] = "999";
 	body = JSON.stringify(obj);  
  }
 
