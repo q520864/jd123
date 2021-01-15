@@ -11,5 +11,5 @@ QQ群：654371081
 hostname = myiconisme.com
 */
 
-body = $response.body.replace(/is_vip":\d/g, 'is_vip":1').replace(/expire_time1":0/g, 'expire_time1":1800000000').replace(/expire_time":""/g, 'expire_time": "2030-01-01"').replace(/re_today_view_times":0/g, 're_today_view_times":999');
+body = $response.body.replace(/is_vip":\d, 'is_vip":1').replace(/expire_time1":0, 'expire_time1":1800000000').replace(/expire_time":"", 'expire_time": "2030-01-01"').replace(/re_today_view_times":0, 're_today_view_times":999');
 $done({body});
