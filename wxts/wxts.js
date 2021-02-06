@@ -3,8 +3,7 @@
 QX:
 [rewrite_local]
 #解锁会员
-^http:\/\/api\.(.+)\.xyz\/fast-cloud\/user\/info url script-response-body tz.js
-^https:\/\/i\.at\.qq\.com\/pay\/memberinfo url script-response-body wxts.js
+^https:\/\/i\.at\.qq\.com\/pay\/memberinfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/wxts/wxts.js
 
 [mitm]
 hostname = i.at.qq.com,
