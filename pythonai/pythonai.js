@@ -20,8 +20,7 @@ obj = {
     "userName": "",
     "vip": 365,
     "userId": 11518,
-    "login_sum": 36,
-    "isFree":1,
+    "login_sum": 36
   };
 
 $done({body: JSON.stringify(obj)});
