@@ -1,5 +1,5 @@
 /*
-https:\/\/(.+)\\.wtzw\\.com\/.+ url script-response-body qmxs_noad.js
+https:\/\/(.+)\\.wtzw\\.com\/.+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/qimao/qimao.js
 
 hostname=*.wtzw.com,
 
