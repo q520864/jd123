@@ -6,7 +6,7 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^https:\/\/www\.babybooks\.top\/v0\/profile url script-response-body babybooks.js
+^https:\/\/www\.babybooks\.top\/v0\/profile url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/babybooks/babybooks.js
 [mitm]
 hostname = www.babybooks.top
 
