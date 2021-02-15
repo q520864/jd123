@@ -25,7 +25,7 @@ let obj = JSON.parse(body);
 
 if (url.indexOf(path1) != -1) {
 	obj.data["vipstatus"] = 1;
-	obj.data["xpiration_time"] = "2029-05-01";
+	obj.data["expiration_time"] = "2023-01-01";
 	body = JSON.stringify(obj);  
  }
 
