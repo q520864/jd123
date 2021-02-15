@@ -6,7 +6,7 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^http?:\/\/cn1\.invit\.vip\/users\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/qing/qing.js
+^https:\/\/cn1\.invit\.vip\/users\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/qing/qing.js
 [mitm]
 hostname = cn1.invit.vip
 
