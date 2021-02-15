@@ -13,22 +13,26 @@ hostname = ws.60he.com
 */
 
 
+
+
+
 var body = $response.body;
 var url = $request.url;
-var obj = JSON.parse(body);
 
-const a = '/user*';
-const b = '/book*';
+const path1 = '\/user*';
+const path2 = '\/book*';
 
-if (url.indexOf(a) != -1) {
-    obj.data.item.nickname = "公众号：少年歌行pro",
-    obj.data.item.vip = 365,
-    body = JSON.stringify(obj);
-}
-if (url.indexOf(b) != -1) {
-    obj.data.isFree = 1,
-    body = JSON.stringify(obj);
-}
+let obj = JSON.parse(body);
 
+if (url.indexOf(path1) != -1) {
+	obj.data["nickname"] = "公众号：少年歌行pro";
+	obj.data["vip"] = 365;
+	body = JSON.stringify(obj);  
+ }
+if (url.indexOf(path2) != -1) {
+	obj.data["isFree"] = 1;
+	body = JSON.stringify(obj);  
+ }
 
 $done({body});
+
