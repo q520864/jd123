@@ -10,6 +10,9 @@ QQ群：654371081
 [mitm]
 hostname = www.babybooks.top
 
+[app下载地址]
+https:\/\/apps.apple.com\/cn\/app\/%E5%84%BF%E7%AB%A5%E7%9D%A1%E5%89%8D%E6%95%85%E4%BA%8B-%E7%AB%A5%E5%B9%B4%E5%BF%85%E5%90%AC%E7%9A%84%E5%A5%BD%E6%95%85%E4%BA%8B\/id1458435477
+
 */
 
 var body = $response.body;
