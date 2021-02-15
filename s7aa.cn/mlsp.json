@@ -8,7 +8,7 @@
 QX:
 [rewrite_local]
 #咪哩视频
-^https:\/\/awmattack\.(.+)\.com\/(api/member/info|api/video/video/video_play) url script-response-body mlsp.js
+^https:\/\/awmattack\.(.+)\.com\/(api/member/info|api/video/video/video_play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/mlsp.json
 
 [mitm]
 hostname = awmattack.*.com
