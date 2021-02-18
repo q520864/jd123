@@ -24,7 +24,7 @@ if (url.indexOf(path1) != -1) {
 	obj.data["is_vip"] = 1;
 	obj.data["expire_time1"] = 1800000000;
 	obj.data["expire_time"] = "2030-01-01";
-	obj.data["re_today_view_times"] = 9999;
+	obj.data["re_today_view_times"] = 999;
 	body = JSON.stringify(obj);  
  }
 
