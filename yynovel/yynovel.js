@@ -24,8 +24,8 @@ const path1 = '*';
 let obj = JSON.parse(body);
 
 if (url.indexOf(path1) != -1) {
-	obj.data["readVipEndTime"] = 2030-01-01 00:00:00;
-	obj.data["allVipEndTime"] = 2030-01-01 00:00:00;
+	obj.data["readVipEndTime"] = "2030-01-01 00:00:00";
+	obj.data["allVipEndTime"] = "2030-01-01 00:00:00";
 	obj.data["bookVipFree"] = 1;
 	body = JSON.stringify(obj);  
  }
