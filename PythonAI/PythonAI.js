@@ -6,7 +6,7 @@
 QQ群：654371081
 圈X配置：
 [rewrite_local]
-^https:\/\/ws\.60he\.com\/(book.*|user.*) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/PythonAI/PythonAI.js
+^http:\/\/ws\.60he\.com\/(book.*|user.*) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/PythonAI/PythonAI.js
 
 [mitm]
 hostname = ws.60he.com
