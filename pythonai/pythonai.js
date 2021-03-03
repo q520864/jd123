@@ -2,7 +2,7 @@
 圈X
 [rewrite_local]
 #Python Ai解锁会员
-^http:\/\/ws\.60he\.com\/(book|user).+ url script-response-body pyai.js
+^http:\/\/ws\.60he\.com\/(book|user).+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/pythonai/pythonai.js
 
 [mitm]
 hostname= ws.60he.com
