@@ -11,7 +11,8 @@ hostname = 69shipin.vip
 
 [rewrite_local]
 #69视频解锁会员
-^http:\/\/69shipin\.vip\/(api\/user\/personal|api\/community\/edit) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
+^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
+^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200
 ```
 
 ## 69視頻下載地址
