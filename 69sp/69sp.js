@@ -25,11 +25,11 @@ var obj = JSON.parse(body);
 const a = '\/api\/user\/personal';
 
 if (url.indexOf(a) != -1) {
-        obj.data.vip_time = "2035-01-01 00:00:00",
-	obj.data.nickname = "少年歌行pro解锁vip",
-	obj.data.vip = 1,
-	obj.data.vip_ymd = "2035-01-01",
-	obj.data.huancun_count = 999999,	
-        body = JSON.stringify(obj),
+        obj.data.vip_time = "2035-01-01 00:00:00";
+	obj.data.nickname = "少年歌行pro解锁vip";
+	obj.data.vip = 1;
+	obj.data.vip_ymd = "2035-01-01";
+	obj.data.huancun_count = 999999;	
+        body = JSON.stringify(obj);
 } 
 $done({body});
