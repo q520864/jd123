@@ -5,7 +5,7 @@
 圈X
 [rewrite_local]
 #69视频解锁会员
-^http:\/\/69shipin\.vip\/(api\/user\/personal|api\/community\/edit) url script-response-body 69sp.js
+^http:\/\/69shipin\.vip\/(api\/user\/personal|api\/community\/edit) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
 
 
 [mitm]
