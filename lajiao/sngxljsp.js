@@ -4,7 +4,7 @@
 
 圈X
 [rewrite_local]
-#69视频解锁会员
+#辣椒视频解锁会员
 ^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
 
 
