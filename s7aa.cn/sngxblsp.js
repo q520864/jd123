@@ -8,7 +8,7 @@ QX:
 [rewrite_local]
 
 #菠萝视频解锁无限看
-^http:\/\/api\.myb6api\.(.+):8080\/api\.php\/api\/users\/getBaseInfo url script-response-body blsp.js
+^http:\/\/api\.myb6api\.(.+):8080\/api\.php\/api\/users\/getBaseInfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/sngxblsp.js
 [mitm]
 hostname = api.myb6api.*:8080
 
