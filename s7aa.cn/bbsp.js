@@ -1,11 +1,13 @@
 /*
-微信公众号：ios黑科技
-官方网站：s7aa.cn
+作者公众号：ios黑科技
+作者官方网站：s7aa.cn
+
+公众号少年歌行pro整理并托管
 
 圈X
 [rewrite_local]
 #波波视频会员去广告（短视频未解锁，网球全部解锁）
-^http:\/\/api\.wscdn\.vip\/index.+ url script-response-body bbsp.js
+^http:\/\/api\.wscdn\.vip\/index.+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/bbsp.js
 
 [mitm]
 hostname= api.wscdn.vip
