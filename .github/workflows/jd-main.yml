@@ -12,7 +12,7 @@
 ## 其他作者库同理  替换如下    
  
 ## 作者名         lxk0301  
-## 作者库名       jd_docker     
+## 作者库名       jd_scripts     
 ## 作者分支名     main     
 ## 同步分支名     ZIYE   （可自定义 ）
 
@@ -39,7 +39,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync lxk0301-jd_docker
+      - name: sync lxk0301-jd_scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
