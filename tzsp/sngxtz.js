@@ -5,7 +5,7 @@
 圈X
 [rewrite_local]
 #桃子视频解锁会员
-^http:\/\/api.*.xyz\/fast-cloud\/user\/info url script-response-body sngxtz.js
+^http:\/\/api.*.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/tzsp/sngxtz.js
 
 
 [mitm]
