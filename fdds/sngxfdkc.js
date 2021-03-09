@@ -5,8 +5,8 @@
 圈X
 [rewrite_local]
 #樊登读书解锁付费課程
-^https:\/\/api.*.com\/* url script-response-body sngxfdkc.js
-^https:\/\/gateway-api.*.com(\/resource-orchestration-system\/knowledge\/v100\/mainList|\/resource-orchestration-system\/program\/content) url script-response-body sngxfdkc.js
+^https:\/\/api.*.com\/* url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfdkc.js
+^https:\/\/gateway-api.*.com(\/resource-orchestration-system\/knowledge\/v100\/mainList|\/resource-orchestration-system\/program\/content) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfdkc.js
 
 [mitm]
 hostname= gateway-api.*.com,api.*.com
