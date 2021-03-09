@@ -5,7 +5,7 @@
 圈X
 [rewrite_local]
 #樊登读书解锁付费书籍
-^https:\/\/gateway-api.*.com\/innovation-orchestration\/api\/ebook\/v100\/ebookInfo url script-response-body sngxfd.js
+^https:\/\/gateway-api.*.com\/innovation-orchestration\/api\/ebook\/v100\/ebookInfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfd.js
 
 
 [mitm]
