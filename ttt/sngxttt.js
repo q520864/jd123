@@ -7,7 +7,7 @@ tg:https://t.me/sngxpro
 [rewrite_local]
 #汤头条解锁视频无限观看（付费视频未破解，待高人）
 
-^http:\/\/ttt2\.tbrapi\.org\:8080\/api.php\/api\/user\/userinfo url script-response-body sngxttt.js
+^http:\/\/ttt2\.tbrapi\.org\:8080\/api.php\/api\/user\/userinfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/ttt/sngx
 
 [mitm]
 hostname= ttt2.tbrapi.org
