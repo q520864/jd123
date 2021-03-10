@@ -12,7 +12,7 @@ tg:https://t.me/sngxpro
 [mitm]
 hostname= ttt2.tbrapi.org
 
-下载地址：appstore
+下载地址：ttt.tips
 
 
 
