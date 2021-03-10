@@ -10,7 +10,7 @@ tg:https://t.me/sngxpro
 ^http:\/\/ttt2\.tbrapi\.org\:8080\/api.php\/api\/user\/userinfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/ttt/sngx
 
 [mitm]
-hostname= ttt2.tbrapi.org
+hostname= ttt2.tbrapi.org:8080
 
 下载地址：ttt.tips
 
