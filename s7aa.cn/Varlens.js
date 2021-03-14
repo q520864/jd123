@@ -1,10 +1,11 @@
 /*
-ioshkj
+作者：ioshkj
+少年歌行pro 托管
 
 QX:
 [rewrite_local]
 #Varlens解锁PRO
-^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/ url script-response-body vspro.js
+^https:\/\/mid\.zineapi\.com\/@varlens\/api\/user\/info\/ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/Varlens.js
 
 [mitm]
 hostname = mid.zineapi.com
