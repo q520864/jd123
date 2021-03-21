@@ -8,7 +8,7 @@
 圈X
 [rewrite_local]
 #独品社区解锁会员
-^http:\/\/taohuatannj\.com\/(api\/user\/personal|api\/community\/edit) url script-response-body dpsq.js
+^http:\/\/taohuatannj\.com\/(api\/user\/personal|api\/community\/edit) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/dpsq.js
 
 [mitm]
 hostname= taohuatannj.com
