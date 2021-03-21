@@ -1,6 +1,9 @@
 /*
-微信公众号：ios黑科技
-官方网站：s7aa.cn
+
+作者微信公众号：ios黑科技
+作者官方网站：s7aa.cn
+
+公众号少年歌行pro托管中
 
 圈X
 [rewrite_local]
