@@ -6,7 +6,7 @@
 [rewrite_local]
 #儿歌点点vip
 
-http:\/\/gateway.ergedd.com\/dduser\/user\/center\/set url script-response-body egdd.js
+http:\/\/gateway.ergedd.com\/dduser\/user\/center\/set url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/egdd/sngxegdd.js
 
 [mitm]
 hostname= gateway.ergedd.com
