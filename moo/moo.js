@@ -1,6 +1,6 @@
 /*
 
-diary.7english.cn:2433
+diary.7english.cn
 
 https://diary.7english.cn:2433/api/user/userInfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/moo/moo.js
 
