@@ -200,13 +200,6 @@ function getApplyData(page) {
                         let orders = [...data.matchAll(/skuApply\((.*?)\)/g)]
                         let titles = [...data.matchAll(/<p class="name">(.*?)<\/p>/g)]
 
-                        titles = titles.filter(good => {
-                            for (let name of args.goodFilters) {
-                                if (good[i][1].indexOf(name) != -1) return false
-                            }
-                            return true
-                        })
-
                         for (let i = 0; i < orders.length; i++) {
                             let info = orders[i][1].split(',')
                             if (info.length != 4) {
@@ -224,15 +217,23 @@ function getApplyData(page) {
 
                             let id = `skuprice_${item.orderId}_${item.skuId}_${item.sequence}`
                             let reg = new RegExp(`${id}.*?isfujian="(.*?)"`)
-                            isfujian = data.match(reg)[1]
+                            let del = data.match(reg)[1] == 'true' // is fujian
 
+                            args.goodFilters.forEach(name => {
+                                if (titles[i][1].indexOf(name) != -1) {
+                                    del = true
+                                }
+                            })
 
-                            if (isfujian == "false") {
+                            if (!del) {
                                 let skuRefundTypeDiv_orderId = `skuRefundTypeDiv_${item.orderId}`
                                 item['refundtype'] = getValueById(data, skuRefundTypeDiv_orderId)
                                 $.orderList.push(item)
                             }
-                            //else...尊敬的顾客您好，您选择的商品本身为赠品，是不支持价保的呦，请您理解。
+                            else {
+                                //尊敬的顾客您好，您选择的商品本身为赠品，是不支持价保的呦，请您理解。
+                                console.log(`⏰ 过滤商品：${item.title}`)
+                            }
                         }
                     }
                 }
