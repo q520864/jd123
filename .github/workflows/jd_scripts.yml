@@ -24,7 +24,7 @@ jobs:
         with:
           source_repo: "https://github.com/panghu999/jd_scripts.git"
           source_branch: "master"
-          destination_branch: "Panghu"
+          destination_branch: "jd_scripts"
           github_token: ${{ secrets.PAT }}
       # Runs a single command using the runners shell
       - name: Run a one-line script
