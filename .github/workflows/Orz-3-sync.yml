@@ -1,0 +1,36 @@
+## Orz-3
+## github地址   https://github.com/Orz-3/QuantumultX.git
+
+## 作者名         Orz-3
+## 作者库名       QuantumultX
+## 作者分支名     master
+## 同步分支名     Orz-3
+
+name: Orz-3-sync
+on:
+  schedule:
+    - cron: '1 */3 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-Orz-3-QuantumultX
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync Orz-3-QuantumultX
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/Orz-3/QuantumultX.git"
+          source_branch: "master"
+          destination_branch: "Orz-3"
+          github_token: ${{ secrets.PAT }}
