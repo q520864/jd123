@@ -1,0 +1,39 @@
+##Zy143L 
+## github地址 https://github.com/Zy143L/JDC_WEB 
+ 
+## 作者名        Zy143L  
+## 作者库名       -     
+## 作者分支名     main     
+## 同步分支名     JDC
+
+
+
+
+name: Zy143L-sync
+on:
+  schedule:
+    - cron: '1 */3 * * *'
+  workflow_dispatch:
+  watch:
+    types: started
+  repository_dispatch:
+    types: sync-Zy143L--
+jobs:
+  repo-sync:
+    env:
+      PAT: ${{ secrets.PAT }} 
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: sync Zy143L--
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/Zy143L/ JDC.git"
+          source_branch: "main"
+          destination_branch: "Zy143L"
+          github_token: ${{ secrets.PAT }}
