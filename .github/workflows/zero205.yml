@@ -1,4 +1,4 @@
-name: zero205_JD-sync
+name: zero205_JD_tencent_scf-sync
 on:
   schedule:
     - cron: '9 */3 * * *'
@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-zero205-JD
+    types: sync-zero205-JD_tencent_scf
 jobs:
   repo-sync:
     env:
@@ -18,11 +18,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync zero205-JD
+      - name: sync zero205-JD_tencent_scf
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/zero205/JD.git"
+          source_repo: "https://github.com/zero205/JD_tencent_scf.git"
           source_branch: "main"
-          destination_branch: "zero205_JD"
+          destination_branch: "zero205_JD_tencent_scf"
           github_token: ${{ secrets.PAT }}
