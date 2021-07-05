@@ -1,4 +1,4 @@
-name: repo-sync
+name: jiulan-sync
 on:
   schedule:
     - cron: '0 */1 * * *'
