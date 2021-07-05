@@ -6,7 +6,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-zero205-JD_tencent_scf
+    types: sync-zero205
 jobs:
   repo-sync:
     env:
