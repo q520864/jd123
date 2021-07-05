@@ -1,4 +1,4 @@
-name: jiulan
+name: jiulan-sync
 on:
   workflow_dispatch:
   schedule:
