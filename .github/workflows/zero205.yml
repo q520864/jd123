@@ -1,4 +1,4 @@
-name: zero205_JD_tencent_scf-sync
+name: zero205-sync
 on:
   schedule:
     - cron: '9 */3 * * *'
